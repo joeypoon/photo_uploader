@@ -1,0 +1,11 @@
+<h1>Photos</h1>
+
+<% @photos.each do |photo| %>
+
+  <div style="float: left;"><%= image_tag photo.name.url(:thumb) %></div>
+
+<% end %>
+
+<div class="clearfix"></div>
+
+<%= paginate @photos %>
