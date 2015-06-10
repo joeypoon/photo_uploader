@@ -5,3 +5,18 @@
 .clearfix {
   clear: both;
 }
+
+nav {
+  .row {
+    .nav {
+      height: 4rem;
+      padding-top: 1rem;
+
+      .container {
+        .nav-element {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

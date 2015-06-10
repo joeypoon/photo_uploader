@@ -1,12 +1,28 @@
-<%= link_to 'Home', root_path %>
+<nav>
 
-<% if session[:name].present? %>
+  <div class="row">
 
-  <%= link_to 'Upload', new_photo_path %>
-  <%= link_to 'Sign Out', logout_path, method: :delete %>
+    <div class="nav navbar-default">
 
-<% else %>
+      <div class="container">
 
-  <%= link_to 'Sign In', login_path %>
+        <%= link_to 'Home', root_path %>
 
-<% end %>
+        <% if session[:name].present? %>
+
+          <%= link_to 'Upload', new_photo_path, class: 'nav-element' %>
+          <%= link_to 'Sign Out', logout_path, method: :delete, class: 'nav-element' %>
+
+        <% else %>
+
+          <%= link_to 'Sign In', login_path, class: 'nav-element' %>
+
+        <% end %>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</nav>

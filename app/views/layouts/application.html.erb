@@ -8,9 +8,13 @@
 </head>
 <body>
 
-  <div class="container">
+  <div class="container-fluid">
 
     <%= render 'layouts/nav' %>
+
+  </div>
+
+  <div class="container">
 
     <% if notice %>
       <div class="alert alert-success"><%= notice %></div>
@@ -21,7 +25,7 @@
     <% end %>
 
     <%= yield %>
-    
+
   </div>
 
 </body>
